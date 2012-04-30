@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @lift.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @lift.description %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @lift.body %>
+</p>
+
+<p>
+  <b>Body html:</b>
+  <%= @lift.body_html %>
+</p>
+
+
+<%= link_to 'Edit', edit_lift_path(@lift) %> |
+<%= link_to 'Back', lifts_path %>

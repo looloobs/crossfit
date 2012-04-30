@@ -1,0 +1,33 @@
+<div class="maincolmask mainmenu">
+    <div class="colleft">
+        <div class="col1wrap">
+            <div class="col1">
+			  <div id="content">
+				<h1>Crossfit Exercises</h1>
+			     <table>
+
+				<% @exercises.each do |exercise| %>
+				  <tr>
+				  	<td><h2><%= exercise.name %></h2></td>
+				  </tr>
+				  <tr>
+					<td><%= exercise.body_html %></td>
+				    <td>
+				    <p><%= exercise.description %></p></td>
+
+				  </tr>
+				<% end %>
+				</table>
+				 
+		  	</div>
+            </div>
+        </div>
+        <div class="col2">
+            <!-- Column 2 start -->
+            <%= render "shared/sidebar" %>
+			<!-- Column 2 end -->
+        </div>
+    </div>
+</div>
+
+

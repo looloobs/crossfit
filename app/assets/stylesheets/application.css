@@ -1,0 +1,395 @@
+	.wrap {
+		width:960px;
+		margin: 0 auto;
+	}
+	.header_wrap {
+		margin: 0 auto;
+	}
+	body {
+		margin:0;
+		padding:0;
+		border:0;			/* This removes the border around the viewport in old versions of IE */
+		width:100%;
+		background-image:url('background.jpg');
+		background-repeat:repeat;
+		min-width:600px;    	/* Minimum width of layout - remove line if not required */
+						/* The min-width property does not work in old versions of Internet Explorer */
+		font-size:90%;
+		overflow-x: hidden;
+	}
+	/* Header styles */
+	#header {
+		background-image:url('header.jpg');
+		background-repeat:repeat-x;
+		clear:both;
+		width:100%;
+		height: 75px;
+		padding-left:250px;
+		overflow-x: hidden;
+        /*border-bottom-width: 500px;*/
+        /*border-bottom:thick solid #F07830;*/
+        /*border-bottom-width:6px;*/
+	}
+	#header p,
+	#header h1,
+	#header h2 {
+
+	}
+	#subheader {
+		float:left;
+		height:40px;
+		width:100%;
+	}
+	#logo {
+		float:left;
+	}
+	#main {
+		
+	}
+	#video {
+		margin-left:150px;
+		margin-top:100px;
+	}
+	#phrase {
+		float:left;
+		margin-top:-32px;
+		margin-left:-20px;
+		font-family: 'Russo One', sans-serif;
+		color:white;
+		font-size:45px;
+		height:  50px;  
+	    width:   800px;
+	}
+	.text {
+		position:relative;
+		height:  50px;  
+	    width:   800px;  
+	    padding: 0;
+	    margin:  0;
+		top:  0; 
+		left: 0;
+	}
+	.text ul li {
+		position:relative;
+		list-style-type: none;
+	}
+	.text img {
+		padding: 15px;  
+		border:  1px solid #ccc;  
+		background-color: #eee;  
+		width:  50px; 
+		height: 400px; 
+		top:  0; 
+		left: 0;
+	}
+	#alive {
+		margin-top:25px;
+	}
+	#ads {
+		float:left;
+		margin-top:-32px;
+		margin-left:-20px;
+		font-family: 'Russo One', sans-serif;
+		color:white;
+		font-size:45px;
+		height:  50px;  
+	}
+	.stuff img{
+		margin-bottom:25px;
+	}
+	#facebook {
+		float:right;
+		margin-top:20px;
+	}
+	#contact {
+	    float:left;
+	    margin-top:10px;
+		margin-left:540px;
+	    font-family:"Arial";
+		font-size: 14px;
+		color:#666;
+	}
+	#contact a {
+	    font-family:"Arial";
+		font-size: 14px;
+		color:#666;
+		text-decoration: none;
+	}
+	/* column container */
+		.colmask {
+			position:relative;		/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+		    clear:both;
+		    float:left;
+	        width:100%;			/* width of whole page */
+			/* This chops off any overhanging divs */
+		}
+		/* 2 column right menu settings */
+		.rightmenu {
+
+		}
+		.rightmenu .colleft {
+	        float:left;
+	        width:200%;
+	        margin-left:-400px;
+	        position:relative;
+	        right:100%;
+
+	    }
+	    .rightmenu .col1wrap {
+		    float:left;
+		    width:50%;
+		    position:relative;
+		    left:50%;
+		    padding-bottom:1em;
+		    background-color:#F07830;
+		}
+		.rightmenu .col1 {
+	        margin:0 15px 0 415px;
+	        
+		}
+	    .rightmenu .col2 {
+	        float:right;
+	        width:500px;
+	        position:relative;
+			margin-top:-3px;
+	        left:410px;
+			height:60px;
+			padding-top:10px;
+	        background-image:url('nav_angle.png');
+			background-repeat:no-repeat;
+	    }
+		.rightmenu .col2 .new_phrase{
+			clear:both;
+			float:left;
+			margin-left:25px;		
+		    font-family:"Arial";
+			font-size: 16px;
+		}
+		.rightmenu .col2 .field{
+			float:left;
+			padding-top:5px;		
+		    font-family:"Arial";
+			font-size: 16px;
+		}
+		.rightmenu .col2 .actions{
+			float:left;
+			margin-left:375px;
+			margin-top:-25px;	
+		}
+	#nav {
+		margin-left:200px;
+		font-family: 'Doppio One', sans-serif;
+		
+	}
+	#nav a {
+	    text-decoration: none;	
+	}
+	#nav ul {
+	    list-style: none;	
+	}
+	/* 
+		LEVEL ONE
+	*/
+	ul.dropdown                         { position: relative; z-index:3; }
+	ul.dropdown li                      { font-weight: bold; float: left; zoom: 1; background: #F07830; }
+	ul.dropdown a:hover		            { color: #C64A05; }
+	ul.dropdown a:active                { color: #C64A05; }
+	ul.dropdown li a                    { display: block; padding: 4px 8px; ;
+		 								  color: #222; }
+	ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+	ul.dropdown li.hover,
+	ul.dropdown li:hover                { background: #C64A05; color: black; position: relative; }
+	ul.dropdown li.hover a              { color: black; }
+
+
+	/* 
+		LEVEL TWO
+	*/
+	ul.dropdown ul 						{ width: 125px; visibility: hidden; position: absolute; top: 100%; left:0; }
+	ul.dropdown ul li 					{ font-weight: normal; background: #C64A05; color: #000; 
+										  border-bottom: 1px solid #ccc; float: none; margin-left:-40px; }
+
+	                                    /* IE 6 & 7 Needs Inline Block */
+	ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block; } 
+
+	/* 
+		LEVEL THREE
+	*/
+	ul.dropdown ul ul 					{ left: 100%; top: 0; }
+	ul.dropdown li:hover > ul 			{ visibility: visible; }
+	
+	#nav2 {
+		float:left;
+		height:60px;
+		width:40%;
+	}
+	
+	/* column container */
+		.maincolmask {
+			position:relative;		/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+		    clear:both;
+		    float:left;
+	        width:100%;			/* width of whole page */
+			overflow-x:hidden;/* This chops off any overhanging divs */
+		}
+		/* 2 column right menu settings */
+	.mainmenu {
+			margin-top:50px;
+	}
+	.mainmenu .colleft {
+	        float:left;
+	        width:200%;
+	        margin-left:-400px;
+	        position:relative;
+	        right:100%;
+
+
+	}
+	.mainmenu .col1wrap {
+		    float:left;
+		    width:53%;
+		    position:relative;
+		    left:50%;
+		    padding-bottom:1em;
+		    overflow:hidden;
+	}
+	.mainmenu .col1 {
+	        margin:0 15px 0 415px;
+	        
+	}
+	.mainmenu .col2 {
+	        float:right;
+	        width:300px;
+	        position:relative;
+			margin-top:-3px;
+	        left:375px;
+			padding-top:10px;
+	}
+
+	#content {
+		margin-left:250px;		
+		padding-right:25px;
+		background-color:white;
+		min-height:600px;
+		border-top-style:solid;
+		border-width:20px;
+		border-color:#b02803;
+		padding-bottom:25px;
+	}
+	#content h1 {
+		font-family: 'Doppio One', sans-serif;
+		font-size:35px;
+		color:#ab2303;
+		margin-top:25px;
+		margin-left:25px;
+
+	}
+	#content h2 {
+		font-family: 'Doppio One', sans-serif;
+		font-size:25px;
+		color:#ab2303;
+		margin-left:35px;
+	}
+	#content p {
+		font-family:"Ariel",Georgia,Serif;
+		font-size:17px;
+		margin-left:35px;
+	}
+	.link a{
+	
+		color:#F07830;
+		font-family:"Ariel",Georgia,Serif;
+		font-size:14px;
+		text-decoration:none;
+	}
+	.link a:hover {
+		color:#6ECBD5;
+		font-family:"Ariel",Georgia,Serif;
+		font-size:14px;
+		text-decoration:none;
+	}
+	.quote {
+		margin-left:50px;
+		
+	}
+	.highlight{
+		font-family: 'Doppio One', sans-serif;
+		font-size:25px;
+		color:#6ECBD5;
+		line-height: 40px;
+	}
+	#sidebar {
+		margin-left:45px;
+	}
+	#sidebar h1 {
+		font-family: 'Doppio One', sans-serif;
+		font-size:16px;
+	}
+	#content table {
+	  
+	}
+	#content table tr {
+	  margin:5px;	
+	  padding:5px;	
+	}
+	#content table td{
+	  margin:5px;	
+	  padding:0px;	
+	}
+	#content table tr td h2 {
+
+		margin-left:35px;
+		padding:0px;
+	}
+	#content table tr td p {
+		margin:0px;
+		margin-left:35px;
+		padding:0px;
+		font-family:"Ariel",Georgia,Serif;
+		font-size:17px;
+	}
+	#login ul{
+		margin-top:20px;
+		margin-right:5px;
+	}
+	#login ul li {
+		display:inline;
+		list-style:none;
+		margin:0;
+		padding:0;
+		font-family:"Arial";
+		font-size: 14px;
+	}
+	#login ul li a {
+		display:block;
+		float:right;
+		padding: 5px;
+		color: white;
+		text-decoration: none;
+	}
+	#login ul li a:hover {
+		color:#C3CFDD;
+	}
+	#login ul li a.active,
+	#login ul li a.active:hover {
+		color:#fff;
+		background:#000;
+		font-weight:bold;
+	}
+	#login ul li a span {
+		display:block;
+	}
+
+	#footer {
+		background-image:url('footer.jpg');
+		background-repeat:repeat-x;
+		clear:both;
+		width:100%;
+		height: 60px;
+		padding-left:250px;
+		overflow-x: hidden;
+		margin-top:45px;
+        /*border-bottom-width: 500px;*/
+        /*border-bottom:thick solid #F07830;*/
+        /*border-bottom-width:6px;*/
+	}

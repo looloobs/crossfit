@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crossfit</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application", "cycle.js" %>
+  <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<%= render "shared/header" %>
+	<div class="maincolmask mainmenu">
+	    <div class="colleft">
+	        <div class="col1wrap">
+	            <div class="col1">
+				  <div id="content">
+				     <h1>What is Crossfit?</h1>
+				
+					<div class="quote"><span class="highlight">"Our program delivers a fitness that is, by design, broad, general, and inclusive. Our specialty is not specializing." -CrossfitHQ</span></div>
+					
+					<p>Crossfit treats everyone like an athlete. It takes us back to our bodies being used the way they were meant to be used. This is called functional fitness. This means you will run, lift weights, swing kettlebells, do handstands, pullups and much more.<p>
+						
+					<h2>What is a "WOD"?</h2>
+					<p>WOD stand for Workout of the Day. Crossfit is different than any other program in so many ways, but one of the most significant things is the structure of the workouts. Everyday you will follow a WOD. You can follow CrossfitHQ website or join a local gym (we call them boxes). Everyday your box will put out a WOD. There are certain set class times for this WOD and you will go workout with other members of your box.</p>
+					<h2>Why does Crossfit cost so much?</h2>
+					<p>Crossfit as a fitness program costs nothing. However, most people find joining a Crossfit box gives them the coaching and support they need to meet their goals, avoid injury and stay healthy. Your coaches will learn who you are as an athlete tailor your workout to suit you. You are paying for excellent coaching and the benefit of a community of athletes working pushing themselves just like you.</p>
+					
+					<a name="myths"><h1>Crossfit Myths</h1></a>
+					<p><strong>Myth 1: Crossfit isn’t for "out of shape" people.</strong><p>
+					<p>Many people have uttered the sentence "I need to get in shape before I go the the Crossfit Gym." Nothing could be further from the truth. Crossfit is so scalable (workouts are changed/scaled to you) that 70 year old priests and pregnant women regularly attend. </p>
+					<p><strong>Myth 2: CrossFit isn’t for women.</strong><p>
+					<p>Remember when women weren't allowed to run marathons because their uterus might fall out? Those days are behind us. Today women outnumber men at many boxes. Women are just as capable of functional fitness as men.</p>
+					<p>Links: <span class="link"><a href=http://www.huffingtonpost.com/2012/04/13/women-boston-marathon_n_1424775.html>Women on the Run</a></span> | <span class="link"><a href=http://www.ted.com/talks/christopher_mcdougall_are_we_born_to_run.html>TED Talks: Born To Run</a></span></p></p>
+					
+				
+					<p><strong>Myth 3: CrossFit is going to make me too muscular (yes, this is for you ladies out there).</strong><p>
+					<p>	“Women are not a special population. They are half the population.”- Mark Rippetoe. First off let's get this straight. Strong is the new skinny. A strong body is a tone, fit body. Women do not possess the same amount of testosterone as men (although due to DNA it does vary). Therefore women do not "bulk up" the way men do. Bottom line, women must get strong before they get skinny. </p>
+					<p>Links: <span class="link"><a href=crossfitfocus.com/img/womentrainingmyths.pdf>Women Training Myths</a></span> | <span class="link"><a href=http://www.crossfitsouthbay.com/2011/05/skinny-fat/>Skinny Fat</a></span></p></p>
+					<p><strong>Myth 4: CrossFit is a cult and intimidating.</strong><p>
+					<p>It is not a cult it is a community. And a really fun one at that. This community is going to be what pushes you to show up again tomorrow and what encourages you through the end of the WOD. You are each others coaches and cheer leaders.</p>
+					<p><strong>Myth 5: Crossfit is dangerous because you can get injured.</strong><p>
+					<p>There is always a chance of injury in anything athletic activity. Your Crossfit box will provide classes on fundamentals before you start doing WODs. Attentive coaches will keep you on track to attain your fitness goals.</p>
+				  </div>
+	            </div>
+	        </div>
+	        <div class="col2">
+	            <!-- Column 2 start -->
+	            <%= render "shared/sidebar" %>
+				<!-- Column 2 end -->
+	        </div>
+	    </div>
+	</div>
+<%= render "shared/footer" %>	
+</body>
+</html>
+
+

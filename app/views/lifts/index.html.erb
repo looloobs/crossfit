@@ -1,0 +1,29 @@
+<h1>Listing lifts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Body</th>
+    <th>Body html</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @lifts.each do |lift| %>
+  <tr>
+    <td><%= lift.name %></td>
+    <td><%= lift.description %></td>
+    <td><%= lift.body %></td>
+    <td><%= lift.body_html %></td>
+    <td><%= link_to 'Show', lift %></td>
+    <td><%= link_to 'Edit', edit_lift_path(lift) %></td>
+    <td><%= link_to 'Destroy', lift, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Lift', new_lift_path %>

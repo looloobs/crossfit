@@ -1,0 +1,11 @@
+<h1>Listing videos</h1>
+
+
+<% @videos.each do |video| %>
+  <li><%= video.body_html %></li>
+<% end %>
+
+
+<br />
+
+<%= link_to 'New Video', new_video_path %>
