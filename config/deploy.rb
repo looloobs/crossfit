@@ -8,7 +8,7 @@ set :scm_verbose, true
 set :git_enable_submodules, 1
 
 # Uncomment this line if you're using SVN.  It makes deployments much faster
-set :deploy_via, :remote_cache
+set :deploy_via, :copy
 
 # Require subversion to do an export instead of a checkout.
 set :checkout, 'export'
