@@ -8,7 +8,7 @@ gem 'rails', '3.2.3'
 gem 'sqlite3'
 gem "mongrel", "1.2.0.pre2"
 gem "auto_html"
-gem "activerecord-mysql-adapter"
+gem 'activerecord-mysql-adapter (>= 0) ruby'
 
 
 # Gems used only for assets and not required
