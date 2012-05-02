@@ -24,7 +24,7 @@ set :deploy_to, "/home/deploy/icrossfitbecause.com/"
 
 # -------------------------------- Server Definitions --------------------------------
 # Define the hostname of your server.  If you have multiple servers for multiple purposes, we can define those below as well.
-set :server_name, "67.214.213.13"
+set :server_name, "67.214.214.71"
 
 # We're assuming you're using a single server for your site, but if you have a separate asset server or database server, you can specify that here.
 role :app, server_name
