@@ -8,7 +8,6 @@ gem 'rails', '3.2.3'
 gem 'sqlite3'
 gem "mongrel", "1.2.0.pre2"
 gem "auto_html"
-gem 'mysql2','0.3.11'
 
 
 
