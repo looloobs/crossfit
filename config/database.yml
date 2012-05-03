@@ -26,5 +26,5 @@ production:
     host: localhost
     pool: 5
     username: looloobs
-    password: lroth.101
+    password: crossfit2012
     socket: /var/lib/mysql/mysql.sock
