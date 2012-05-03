@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @video = Video.last(:order => "RANDOM()")
+    @video = Video.last
     @phrases = Phrase.all
     @new_phrase = Phrase.new
     
