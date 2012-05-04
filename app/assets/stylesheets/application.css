@@ -12,7 +12,7 @@
 		width:100%;
 		background-image:url('background.jpg');
 		background-repeat:repeat;
-		min-width:600px;    	/* Minimum width of layout - remove line if not required */
+		min-height:100%;    	/* Minimum width of layout - remove line if not required */
 						/* The min-width property does not work in old versions of Internet Explorer */
 		font-size:90%;
 		overflow-x: hidden;
@@ -231,10 +231,13 @@
 		    float:left;
 	        width:100%;			/* width of whole page */
 			overflow-x:hidden;/* This chops off any overhanging divs */
+
 		}
 		/* 2 column right menu settings */
 	.mainmenu {
 			margin-top:50px;
+			padding-bottom:75px;
+
 	}
 	.mainmenu .colleft {
 	        float:left;
@@ -385,6 +388,8 @@
 		background-repeat:repeat-x;
 		clear:both;
 		width:100%;
+		position:absolute;
+		bottom:0;
 		height: 60px;
 		padding-left:250px;
 		overflow-x: hidden;
