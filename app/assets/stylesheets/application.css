@@ -298,6 +298,91 @@
 		font-size:17px;
 		margin-left:35px;
 	}
+	#girls_content{
+		margin-left:250px;		
+		padding-right:15px;
+		padding-left:10px;
+		padding-bottom:25px;
+		background-color:white;
+		padding:10px;
+		
+	}
+	#girls_content h1 {
+		font-family: 'Doppio One', sans-serif;
+		font-size:35px;
+		
+	}
+	#girls_content p {
+		font-family:"Arial",Georgia,Serif;
+		font-size:16px;
+	}
+	#girls_big_box {
+		float:left;
+		margin-bottom:25px;
+	}
+	.girls_box {
+		float:left;
+		padding:10px;
+		width:174px;
+		height:174px;
+		margin-bottom:15px;
+		font-family:"Arial",Georgia,Serif;
+		font-size:14px;
+	}
+	.girls_box h2 {
+		font-family: 'League Script', cursive;
+		color:#cc008b;
+		font-size:22px;
+	}
+	.girls_highlight{
+		font-family: 'Doppio One', sans-serif;
+		font-size:25px;
+		color:#cc008b;
+		line-height: 40px;
+	}
+	#heros_content{
+		margin-left:250px;		
+		padding-right:15px;
+		padding-left:10px;
+		padding-bottom:25px;
+		background-color:white;
+		padding:10px;
+		
+	}
+	#heros_content h1 {
+		font-family: 'Doppio One', sans-serif;
+		font-size:35px;
+		
+	}
+	#heros_content p {
+		font-family:"Arial",Georgia,Serif;
+		font-size:13px;
+	}
+	#heros_big_box {
+		float:left;
+		margin-bottom:25px;
+		margin-left:45px;
+	}
+	.heros_box {
+		float:left;
+		padding:10px;
+		width:225px;
+		height:275px;
+		margin-bottom:15px;
+		font-family:"Arial",Georgia,Serif;
+		font-size:14px;
+	}
+	.heros_box h2 {
+		font-family: 'Permanent Marker', cursive;
+		color:#F07830;
+		font-size:22px;
+	}
+	.heros_highlight{
+		font-family: 'Doppio One', sans-serif;
+		font-size:25px;
+		color:#cc008b;
+		line-height: 40px;
+	}
 	.link a{
 	
 		color:#F07830;

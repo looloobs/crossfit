@@ -1,4 +1,35 @@
 <h1>Listing heros</h1>
+<div class="maincolmask mainmenu">
+    <div class="colleft">
+        <div class="col1wrap">
+            <div class="col1">
+			  <div id="heros_content">
+			     <h1>The Heros</h1>
+				<p>The Girls are fundamental Crossfits WODs that should be done periodically to measure your improvement.</p>
+				<p>Read more about scaling your WOD.</p>
+				  <div id="heros_big_box">
+					<% @heros.each do |hero| %>
+					<div class= "heros_box">
+				    <h2><%= image_tag('star.gif')%><%= hero.name %></h2>
+				    <%= simple_format(hero.description) %>
+					</div>
+				    <% end %>
+				  </div>
+				<div class= "heros_highlight">
+					“I want to explain the workout once and then give it a name.  I thought that anything that left you flat on your back, looking up at the sky asking ‘what just happened to me?’ deserved a females name.  Workouts are just like storms, they wreak havoc on towns.” -Greg Glassman 
+				</div>
+			  </div>
+            </div>
+        </div>
+        <div class="col2">
+            <!-- Column 2 start -->
+            <%= render "shared/sidebar" %>
+			<!-- Column 2 end -->
+        </div>
+
+    </div>
+	<%= render "shared/footer" %>
+</div>
 
 <table>
   <tr>

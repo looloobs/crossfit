@@ -1,25 +1,32 @@
-<h1>Listing girls</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="maincolmask mainmenu">
+    <div class="colleft">
+        <div class="col1wrap">
+            <div class="col1">
+			  <div id="girls_content">
+			     <h1>The Girls</h1>
+				<p>The Girls are fundamental Crossfits WODs that should be done periodically to measure your improvement.</p>
+				<p>Read more about scaling your WOD.</p>
+				  <div id="girls_big_box">
+					<% @girls.each do |girl| %>
+					<div class= "girls_box">
+				    <h2><%= girl.name %></h2>
+				    <%= simple_format(girl.description) %>
+					</div>
+				    <% end %>
+				  </div>
+				<div class= "girls_highlight">
+					“I want to explain the workout once and then give it a name.  I thought that anything that left you flat on your back, looking up at the sky asking ‘what just happened to me?’ deserved a females name.  Workouts are just like storms, they wreak havoc on towns.” -Greg Glassman 
+				</div>
+			  </div>
+            </div>
+        </div>
+        <div class="col2">
+            <!-- Column 2 start -->
+            <%= render "shared/sidebar" %>
+			<!-- Column 2 end -->
+        </div>
 
-<% @girls.each do |girl| %>
-  <tr>
-    <td><%= girl.name %></td>
-    <td><%= girl.description %></td>
-    <td><%= link_to 'Show', girl %></td>
-    <td><%= link_to 'Edit', edit_girl_path(girl) %></td>
-    <td><%= link_to 'Destroy', girl, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Girl', new_girl_path %>
+    </div>
+	<%= render "shared/footer" %>
+</div>
