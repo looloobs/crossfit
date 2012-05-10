@@ -1,0 +1,41 @@
+<div class="maincolmask mainmenu">
+    <div class="colleft">
+        <div class="col1wrap">
+            <div class="col1">
+			  <div id="moms_content">
+			   <div class= "mom_box2">  
+			<div class= "title">
+			 I am <%= @mom.name %>, I have <%= @mom.kid %> kid(s) and I Crossfit because <%= @mom.because %>.
+			</div>
+
+
+			<p>
+			  
+			  Three words that describe Crossfit to me are: <%= @mom.word_one %>, <%= @mom.word_two %> and <%= @mom.word_three %>.
+			</p>
+
+			<p>
+		
+			  I starting Crossfitting in <%= @mom.year %> and my greatest change is <%= @mom.change %>.
+			</p>
+
+			<p>
+			  This is my story:<br />
+			  <%= @mom.story %>
+			</p>
+				</div>
+			  </div>
+            </div>
+        </div>
+        <div class="col2">
+            <!-- Column 2 start -->
+            <%= render "shared/sidebar" %>
+			<!-- Column 2 end -->
+        </div>
+
+    </div>
+
+</div>
+	<%= render "shared/footer" %>
+
+

@@ -1,0 +1,53 @@
+<%= form_for(@mom) do |f| %>
+  <% if @mom.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mom.errors.count, "error") %> prohibited this mom from being saved:</h2>
+
+      <ul>
+      <% @mom.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+	<p>
+    My name is 
+    <%= f.text_field :name, :class => 'textfield', :size => '11' %>
+  
+    and I have
+    <%= f.text_field :kid, :size => '1', :class => 'textfield' %> kid(s).
+	<p>
+  </div>
+
+  <div class="field">
+	<p>
+    I Crossfit because...
+    <%= f.text_field :because, :class => 'textfield', :size => '45' %>.
+	</p>
+  </div>
+  <div class="field">
+	<p>
+   Three words that describe Crossfit for me are: 
+    <%= f.text_field :word_one, :class => 'textfield', :size => '11' %><br /> <%= f.text_field :word_two, :class => 'textfield', :size => '11' %> <br /><%= f.text_field :word_three, :class => 'textfield', :size => '11' %>
+</p>
+  </div>
+  <div class="field">
+	<p>
+    I started Crossfitting in 
+    <%= f.text_field :year, :class => 'textfield', :size=>'5' %>
+and my greatest change is 
+    <%= f.text_field :change, :class => 'textfield' %>.
+</p>
+  </div>
+  <div class="field">
+	<p>
+    This is my story. <span class="small">(Please feel free to share your Crossfit story.)</span>
+    <%= f.text_area :story, :class => 'textarea', :size => '80' %>
+</p>
+  </div>
+  <div class="actions">
+    <%= image_submit_tag("share_my_story.jpg") %>
+  </div>
+<% end %>

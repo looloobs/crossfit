@@ -1,4 +1,6 @@
 Crossfit::Application.routes.draw do
+  resources :moms
+
   resources :girls
 
   resources :heros

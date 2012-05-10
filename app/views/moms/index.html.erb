@@ -1,0 +1,30 @@
+<div class="maincolmask mainmenu">
+    <div class="colleft">
+        <div class="col1wrap">
+            <div class="col1">
+			  <div id="moms_content">
+			     <h1>Crossfit Moms</h1>
+			<div class="quote"><span class="highlight">"Strong is the new skinny."</span></div><div id="new_mom_link"><%= link_to image_tag('share_my_story_green.png'), new_mom_path %></div>
+				  <div id="heros_big_box">
+					<% @moms.each do |mom| %>
+					<div class= "mom_box">
+				    <div class="title">I am <%= mom.name %>, a Mom of <%= mom.kid %> kid(s).</div>
+					<div class="sub_title">I Crossfit because <%= mom.because %>.</div>
+					<%=link_to 'Read My Story', mom %>
+				  
+					</div>
+				    <% end %>
+				  </div>
+			  </div>
+            </div>
+        </div>
+        <div class="col2">
+            <!-- Column 2 start -->
+            <%= render "shared/sidebar" %>
+			<!-- Column 2 end -->
+        </div>
+
+    </div>
+
+</div>
+	<%= render "shared/footer" %>
