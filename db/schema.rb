@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120508161834) do
+ActiveRecord::Schema.define(:version => 20120510173032) do
 
   create_table "exercises", :force => true do |t|
     t.string   "name"
@@ -54,9 +54,9 @@ ActiveRecord::Schema.define(:version => 20120508161834) do
     t.string   "word_three"
     t.string   "year"
     t.string   "change"
-    t.text   "story"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.text     "story",      :limit => 255
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
   create_table "phrases", :force => true do |t|
