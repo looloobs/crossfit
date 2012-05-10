@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(:version => 20120508161834) do
     t.string   "word_three"
     t.string   "year"
     t.string   "change"
-    t.string   "story"
+    t.text   "story"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
