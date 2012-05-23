@@ -475,6 +475,72 @@
 		float:right;
 		margin-top:-30px;
 	}
+	#endurance_content {		
+		padding-right:25px;
+		padding-left:25px;
+		background-color:white;
+		min-height:600px;
+		border-top-style:solid;
+		border-width:20px;
+		border-color:#b02803;
+		padding-bottom:25px;
+	}
+	#endurance_content h1 {
+		font-family: 'Doppio One', sans-serif;
+		font-size:85px;
+		color:#ab2303;
+		margin-top:25px;
+		margin-left:25px;
+		text-align:center;
+	}
+	#endurance_content h2 {
+		font-family: 'Comfortaa', sans-serif;
+		font-weight: 300;
+		font-size:55px;
+		color:#F07830;
+		margin-top:25px;
+		margin-left:25px;
+		margin-bottom:0px;
+	}
+	#endurance_content h2 a {
+		font-family: 'Comfortaa', sans-serif;
+		font-weight: 300;
+		font-size:55px;
+		color:#F07830;
+		background-color:#6ECBD5;
+		text-decoration:none;
+		margin-top:25px;
+		margin-left:25px;
+	}
+	#endurance_content h3 {
+		font-family: 'Comfortaa', sans-serif;
+		font-weight: 300;
+		font-size:45px;
+		color:#3ea9b4;
+		margin-top:0px;
+		margin-left:25px;
+	}
+	#endurance_content h3 a {
+		font-family: 'Comfortaa', sans-serif;
+		font-weight: 300;
+		font-size:45px;
+		color:#F07830;
+		background-color:#6ECBD5;
+		text-decoration:none;
+		margin-top:0px;
+		margin-left:0px;
+	}
+	#endurance_content p {
+		font-family: 'Ariel', sans-serif;
+		font-weight: 300;
+		font-size:15px;
+		color:#000;
+		margin-left:25px;
+	}
+	.perks_box {
+		background-color:#f6f8bc;
+		margin-left:10px;
+	}
 	.link a{
 	
 		color:#F07830;
